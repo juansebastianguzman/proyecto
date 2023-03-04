@@ -1,12 +1,13 @@
 #Juan sebastian Guzman Franco 
-# Este programa nos permite encontrar la encuacion que nos describe el
+# Este programa nos permite encontrar la ecuación que nos describe 
 #el comportamiento de los datos extraidos mediante un 
-#experimiento,usando polinomios de lagrange.
+#experimiento, usando polinomios de lagrange.
 # en este experimento se mide la deflexión de una barra empotrada 
 #con una carga en el extremo 
 
 #importamos librerias necesarias 
 import numpy as np
+import sympy as sym
 import matplotlib.pyplot as plt
 
 # Ingresamos los datos encontrados en el experimento 
@@ -55,16 +56,12 @@ print(' ')
 print('polinomio simplificado')
 print(polisimple)
 
-# Ejemplo con la librería lagrange
-# p = lagrange(xi,fi)
-# print('polinomio con lagrange')
-# print(p)
-
 # Grafica
 plt.plot(xi,fi, 'o')
 plt.plot(p_xi,pfi)
 plt.show()
 
+#Evaluamos en un punto 
 #print(' ')
 #print('Evaluación del polinomio')
 #print(px(68.7))
