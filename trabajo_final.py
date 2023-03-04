@@ -43,7 +43,7 @@ polisimple = sym.expand(polinomio)
 px = sym.lambdify(x, polinomio)
 
 # Vectores para graficas
-muestras = 100 # Numero cualquiera
+muestras = 13 # Numero cualquiera
 a = np.min(xi)
 b = np.max(xi)
 p_xi = np.linspace(a,b,muestras)
@@ -61,7 +61,7 @@ plt.plot(xi,fi, 'o')
 plt.plot(p_xi,pfi)
 plt.show()
 
-#Evaluamos en un punto 
-#print(' ')
-#print('Evaluación del polinomio')
-#print(px(68.7))
+Evaluamos en un punto 
+print(' ')
+print('Evaluación del polinomio')
+print(px(12))
